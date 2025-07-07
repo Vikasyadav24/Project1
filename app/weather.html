@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 mx-auto  mycard" >
+                <div class="d-flex">
+                    <input  type="text" id="search" class="form-control rounded-pill">
+                    <button class="btn btn-light rounded-circle ms-1" onclick="weather()">
+                        <img src="images/search.png" alt="" height="25">
+                    </button>
+                </div>
+                <div class="text-center">
+
+                    <img src="images/clouds.png" height="200px" alt="">
+                </div>
+                <h1 id="temp" class="text-center">0 ℃</h1>
+                <h1 id="city" class="text-center">lucknow</h1>
+                
+                <div class="row justify-content-center py-4">
+                    <div class="col-sm-6 d-flex justify-content-evenly">
+                        <img src="images/humidity.png" alt="">
+                        <div class="ps-3">
+                            <h4 id="humid">28%</h4>
+                            <h6>humidity</h6>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-evenly">
+                        <img src="images/wind.png" height="60" alt="">
+                        <div class="ps-3">
+                            <h4 id="wind">3 m/s </h4>
+                            <h6> wind </h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
